@@ -28,6 +28,9 @@ export class Sdk extends BaseSdk {
     async createRegistration(data?: CreateRegistrationInput, fields: selections = []): Promise<Registration> {
         return this.mutation('createRegistration', {data}, undefined, fields);
     }
+    async getRegistration(id: string, fields: selections = []): Promise<Registration> {
+        return this.query('getRegistration', {id}, undefined, fields);
+    }
     async me(fields: selections = []): Promise<Partner> {
         return this.query('me', undefined, undefined, fields);
     }

@@ -2,6 +2,10 @@
 
 // -- QUERIES -----------------------
 
+export const getRegistration = [
+    `query($id: ID!) { getRegistration(id: $id) { @selections@ } }`,
+    ["createdAt","email","facebookUrl","firstName","id","lastName","partner","partnerCode","partnerName","phone","publicToken","status","updatedAt","websiteUrl"],
+];
 export const me = [
     `query { me { @selections@ } }`,
     ["code","createdAt","id","name","updatedAt"],

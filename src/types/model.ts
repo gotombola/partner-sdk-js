@@ -45,6 +45,7 @@ export type Mutation = {
 };
 export type Query = {
     // optional
+    getRegistration?: Registration;
     me?: Partner;
 };
 export type Role = "partner" | "platform";
