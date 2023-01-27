@@ -6,7 +6,7 @@ vars:
   companyName: GoTombola
   repository:
     type: git
-    url: ssh://git@github.com/gotombola/core-partner-js.git
+    url: ssh://git@github.com/gotombola/partner-sdk-js.git
     directory: packages/partner-sdk
   publishConfig: github
   sdkEnvVarPrefix: PARTNER_SDK
