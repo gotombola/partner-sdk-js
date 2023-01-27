@@ -1,0 +1,22 @@
+// noinspection JSUnusedGlobalSymbols
+
+// -- QUERIES -----------------------
+
+export const me = [
+    `query { me { @selections@ } }`,
+    ["code","createdAt","id","name","updatedAt"],
+];
+// -- MUTATIONS ---------------------
+
+export const createAuthToken = [
+    `mutation($data: CreateAuthTokenInput!) { createAuthToken(data: $data) { @selections@ } }`,
+    ["refreshToken","token"],
+];
+export const createRegistration = [
+    `mutation($data: CreateRegistrationInput) { createRegistration(data: $data) { @selections@ } }`,
+    ["createdAt","id","partner","partnerCode","partnerName","status","updatedAt"],
+];
+export const refreshAuthToken = [
+    `mutation($data: RefreshAuthTokenInput!) { refreshAuthToken(data: $data) { @selections@ } }`,
+    ["refreshToken","token"],
+];

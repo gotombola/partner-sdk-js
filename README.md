@@ -1,0 +1,1 @@
+# @gotombola/partner-sdk

@@ -1,0 +1,24 @@
+language: typescript
+
+vars:
+  packageName: '@gotombola/partner-sdk'
+  packageDescription: GoTombola Partner SDK
+  companyName: GoTombola
+  repository:
+    type: git
+    url: ssh://git@github.com/gotombola/core-partner-js.git
+    directory: packages/partner-sdk
+  publishConfig: github
+  sdkEnvVarPrefix: PARTNER_SDK
+  sdkDebugPrefix: partner-sdk
+  userAgent: gotombola-partner-sdk-ts/1.0
+  defaultEnv: default
+  repoType: standalone
+
+envs:
+  local:
+    graphql: http://localhost:4000
+  default:
+    graphql: https://partner.api.{{source}}.gotombola.co
+  prod:
+    graphql: https://partner.api.gotombola.co
