@@ -14,7 +14,7 @@ export const createAuthToken = [
 ];
 export const createRegistration = [
     `mutation($data: CreateRegistrationInput) { createRegistration(data: $data) { @selections@ } }`,
-    ["createdAt","id","partner","partnerCode","partnerName","status","updatedAt"],
+    ["createdAt","email","facebookUrl","firstName","id","lastName","partner","partnerCode","partnerName","phone","publicToken","status","updatedAt","websiteUrl"],
 ];
 export const refreshAuthToken = [
     `mutation($data: RefreshAuthTokenInput!) { refreshAuthToken(data: $data) { @selections@ } }`,

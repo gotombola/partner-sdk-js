@@ -7,13 +7,14 @@ export type CreateAuthTokenInput = {
     username: string;
 };
 export type CreateRegistrationInput = {
-    // required
-    email: string;
-    name: string;
     // optional
+    email?: string;
+    facebookUrl?: string;
     firstName?: string;
     lastName?: string;
+    name?: string;
     phone?: string;
+    websiteUrl?: string;
 };
 export type RefreshAuthTokenInput = {
     // required

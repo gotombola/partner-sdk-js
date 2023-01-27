@@ -18,12 +18,19 @@ export type Partner = {
 export type Registration = {
     // optional
     createdAt?: number;
+    email?: string;
+    facebookUrl?: string;
+    firstName?: string;
     id?: string;
+    lastName?: string;
     partner?: string;
     partnerCode?: string;
     partnerName?: string;
+    phone?: string;
+    publicToken?: string;
     status?: string;
     updatedAt?: number;
+    websiteUrl?: string;
 };
 
 // helper types
