@@ -42,6 +42,7 @@ export type Mutation = {
     createAuthToken?: AuthTokenResponse;
     createRegistration?: Registration;
     refreshAuthToken?: AuthTokenResponse;
+    updateRegistration?: Registration;
 };
 export type Query = {
     // optional

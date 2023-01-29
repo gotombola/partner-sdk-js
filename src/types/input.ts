@@ -20,3 +20,13 @@ export type RefreshAuthTokenInput = {
     // required
     refreshToken: string;
 };
+export type UpdateRegistrationInput = {
+    // optional
+    email?: string;
+    facebookUrl?: string;
+    firstName?: string;
+    lastName?: string;
+    name?: string;
+    phone?: string;
+    websiteUrl?: string;
+};

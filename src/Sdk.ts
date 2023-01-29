@@ -10,6 +10,7 @@ import {
     Partner,
     RefreshAuthTokenInput,
     Registration,
+    UpdateRegistrationInput,
 
     sdk_config,
     selections,
@@ -36,6 +37,9 @@ export class Sdk extends BaseSdk {
     }
     async refreshAuthToken(data: RefreshAuthTokenInput, fields: selections = []): Promise<AuthTokenResponse> {
         return this.mutation('refreshAuthToken', {data}, undefined, fields);
+    }
+    async updateRegistration(id: string, data?: UpdateRegistrationInput, fields: selections = []): Promise<Registration> {
+        return this.mutation('updateRegistration', {id, data}, undefined, fields);
     }
 }
 
