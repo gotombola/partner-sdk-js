@@ -23,6 +23,9 @@ export class Sdk extends BaseSdk {
     constructor(config: Omit<sdk_config, 'queries'>) {
         super({queries, ...config});
     }
+    async completeRegistration(id: string, fields: selections = []): Promise<Registration> {
+        return this.mutation('completeRegistration', {id}, undefined, fields);
+    }
     async createAuthToken(data: CreateAuthTokenInput, fields: selections = []): Promise<AuthTokenResponse> {
         return this.mutation('createAuthToken', {data}, undefined, fields);
     }

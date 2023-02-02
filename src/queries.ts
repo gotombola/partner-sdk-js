@@ -12,6 +12,10 @@ export const me = [
 ];
 // -- MUTATIONS ---------------------
 
+export const completeRegistration = [
+    `mutation($id: ID!) { completeRegistration(id: $id) { @selections@ } }`,
+    ["createdAt","email","facebookUrl","firstName","id","lastName","partner","partnerCode","partnerName","phone","publicToken","status","updatedAt","websiteUrl"],
+];
 export const createAuthToken = [
     `mutation($data: CreateAuthTokenInput!) { createAuthToken(data: $data) { @selections@ } }`,
     ["refreshToken","token"],

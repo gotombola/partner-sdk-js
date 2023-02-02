@@ -39,6 +39,7 @@ export type IP = {
 };
 export type Mutation = {
     // optional
+    completeRegistration?: Registration;
     createAuthToken?: AuthTokenResponse;
     createRegistration?: Registration;
     refreshAuthToken?: AuthTokenResponse;
