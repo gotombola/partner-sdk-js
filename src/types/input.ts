@@ -12,8 +12,10 @@ export type CreateRegistrationInput = {
     facebookUrl?: string;
     firstName?: string;
     lastName?: string;
-    name?: string;
+    nin?: string;
     phone?: string;
+    requestedGameName?: string;
+    requestedOrganizationName?: string;
     websiteUrl?: string;
 };
 export type RefreshAuthTokenInput = {
@@ -26,7 +28,9 @@ export type UpdateRegistrationInput = {
     facebookUrl?: string;
     firstName?: string;
     lastName?: string;
-    name?: string;
+    nin?: string;
     phone?: string;
+    requestedGameName?: string;
+    requestedOrganizationName?: string;
     websiteUrl?: string;
 };

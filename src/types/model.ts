@@ -28,12 +28,15 @@ export type Registration = {
     gamePublicPageUrl?: string;
     id?: string;
     lastName?: string;
+    nin?: string;
     partner?: string;
     partnerCode?: string;
     partnerName?: string;
     phone?: string;
     progressRatio?: number;
     publicToken?: string;
+    requestedGameName?: string;
+    requestedOrganizationName?: string;
     status?: string;
     updatedAt?: number;
     websiteUrl?: string;
