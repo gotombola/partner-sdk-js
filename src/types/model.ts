@@ -21,6 +21,9 @@ export type Registration = {
     email?: string;
     facebookUrl?: string;
     firstName?: string;
+    game?: string;
+    gameCode?: string;
+    gameName?: string;
     gamePublicPageShortUrl?: string;
     gamePublicPageUrl?: string;
     id?: string;
