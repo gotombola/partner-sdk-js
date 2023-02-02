@@ -4,7 +4,7 @@
 
 export const getRegistration = [
     `query($id: ID!) { getRegistration(id: $id) { @selections@ } }`,
-    ["createdAt","email","facebookUrl","firstName","id","lastName","partner","partnerCode","partnerName","phone","publicToken","status","updatedAt","websiteUrl"],
+    ["createdAt","email","facebookUrl","firstName","gamePublicPageShortUrl","gamePublicPageUrl","id","lastName","partner","partnerCode","partnerName","phone","progressRatio","publicToken","status","updatedAt","websiteUrl"],
 ];
 export const me = [
     `query { me { @selections@ } }`,
@@ -14,7 +14,7 @@ export const me = [
 
 export const completeRegistration = [
     `mutation($id: ID!) { completeRegistration(id: $id) { @selections@ } }`,
-    ["createdAt","email","facebookUrl","firstName","id","lastName","partner","partnerCode","partnerName","phone","publicToken","status","updatedAt","websiteUrl"],
+    ["createdAt","email","facebookUrl","firstName","gamePublicPageShortUrl","gamePublicPageUrl","id","lastName","partner","partnerCode","partnerName","phone","progressRatio","publicToken","status","updatedAt","websiteUrl"],
 ];
 export const createAuthToken = [
     `mutation($data: CreateAuthTokenInput!) { createAuthToken(data: $data) { @selections@ } }`,
@@ -22,7 +22,7 @@ export const createAuthToken = [
 ];
 export const createRegistration = [
     `mutation($data: CreateRegistrationInput) { createRegistration(data: $data) { @selections@ } }`,
-    ["createdAt","email","facebookUrl","firstName","id","lastName","partner","partnerCode","partnerName","phone","publicToken","status","updatedAt","websiteUrl"],
+    ["createdAt","email","facebookUrl","firstName","gamePublicPageShortUrl","gamePublicPageUrl","id","lastName","partner","partnerCode","partnerName","phone","progressRatio","publicToken","status","updatedAt","websiteUrl"],
 ];
 export const refreshAuthToken = [
     `mutation($data: RefreshAuthTokenInput!) { refreshAuthToken(data: $data) { @selections@ } }`,
@@ -30,5 +30,5 @@ export const refreshAuthToken = [
 ];
 export const updateRegistration = [
     `mutation($id: ID!, $data: UpdateRegistrationInput) { updateRegistration(id: $id, data: $data) { @selections@ } }`,
-    ["createdAt","email","facebookUrl","firstName","id","lastName","partner","partnerCode","partnerName","phone","publicToken","status","updatedAt","websiteUrl"],
+    ["createdAt","email","facebookUrl","firstName","gamePublicPageShortUrl","gamePublicPageUrl","id","lastName","partner","partnerCode","partnerName","phone","progressRatio","publicToken","status","updatedAt","websiteUrl"],
 ];

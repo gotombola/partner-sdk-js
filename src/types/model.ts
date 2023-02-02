@@ -21,12 +21,15 @@ export type Registration = {
     email?: string;
     facebookUrl?: string;
     firstName?: string;
+    gamePublicPageShortUrl?: string;
+    gamePublicPageUrl?: string;
     id?: string;
     lastName?: string;
     partner?: string;
     partnerCode?: string;
     partnerName?: string;
     phone?: string;
+    progressRatio?: number;
     publicToken?: string;
     status?: string;
     updatedAt?: number;
