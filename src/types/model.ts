@@ -39,6 +39,7 @@ export type Registration = {
     partnerName?: string;
     phone?: string;
     progressRatio?: number;
+    progressStepName?: string;
     publicToken?: string;
     requestedGameDescription?: string;
     requestedGameName?: string;
