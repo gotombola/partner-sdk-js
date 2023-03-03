@@ -7,9 +7,11 @@ import {
     AuthTokenResponse,
     CreateAuthTokenInput,
     CreateRegistrationInput,
+    CreateSellergroupByGameCodeInput,
     Partner,
     RefreshAuthTokenInput,
     Registration,
+    Sellergroup,
     UpdateRegistrationInput,
 
     sdk_config,
@@ -31,6 +33,9 @@ export class Sdk extends BaseSdk {
     }
     async createRegistration(data?: CreateRegistrationInput, fields: selections = []): Promise<Registration> {
         return this.mutation('createRegistration', {data}, undefined, fields);
+    }
+    async createSellergroupByGameCode(code: string, data?: CreateSellergroupByGameCodeInput, fields: selections = []): Promise<Sellergroup> {
+        return this.mutation('createSellergroupByGameCode', {code, data}, undefined, fields);
     }
     async getRegistration(id: string, fields: selections = []): Promise<Registration> {
         return this.query('getRegistration', {id}, undefined, fields);

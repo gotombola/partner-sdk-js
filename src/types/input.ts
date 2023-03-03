@@ -29,6 +29,12 @@ export type CreateRegistrationInput = {
     requestedThemeCode?: string;
     websiteUrl?: string;
 };
+export type CreateSellergroupByGameCodeInput = {
+    // optional
+    email?: string;
+    name?: string;
+    phone?: string;
+};
 export type ImageInput = {
     // optional
     bucket?: string;

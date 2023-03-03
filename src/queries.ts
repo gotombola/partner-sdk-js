@@ -24,6 +24,10 @@ export const createRegistration = [
     `mutation($data: CreateRegistrationInput) { createRegistration(data: $data) { @selections@ } }`,
     ["country","createdAt","email","facebookUrl","firstName","game","gameCode","gameName","gamePublicPageShortUrl","gamePublicPageUrl","id","lastName","locale","nin","partner","partnerCode","partnerName","phone","progressRatio","progressStepName","publicToken","requestedGameDescription","requestedGameName","requestedOrganizationDescription","requestedOrganizationDomain","requestedOrganizationName","requestedOrganizationOverline","requestedOrganizationPresentation","requestedThemeCode","status","updatedAt","websiteUrl"],
 ];
+export const createSellergroupByGameCode = [
+    `mutation($code: String!, $data: CreateSellergroupByGameCodeInput) { createSellergroupByGameCode(code: $code, data: $data) { @selections@ } }`,
+    ["createdAt","email","game","gameCode","gameName","id","name","partner","partnerCode","partnerName","phone","publicPageShortUrl","publicPageUrl","publicToken","status","updatedAt"],
+];
 export const refreshAuthToken = [
     `mutation($data: RefreshAuthTokenInput!) { refreshAuthToken(data: $data) { @selections@ } }`,
     ["refreshToken","token"],

@@ -53,6 +53,25 @@ export type Registration = {
     updatedAt?: number;
     websiteUrl?: string;
 };
+export type Sellergroup = {
+    // optional
+    createdAt?: number;
+    email?: string;
+    game?: string;
+    gameCode?: string;
+    gameName?: string;
+    id?: string;
+    name?: string;
+    partner?: string;
+    partnerCode?: string;
+    partnerName?: string;
+    phone?: string;
+    publicPageShortUrl?: string;
+    publicPageUrl?: string;
+    publicToken?: string;
+    status?: string;
+    updatedAt?: number;
+};
 
 // helper types
 
@@ -97,6 +116,7 @@ export type Mutation = {
     completeRegistration?: Registration;
     createAuthToken?: AuthTokenResponse;
     createRegistration?: Registration;
+    createSellergroupByGameCode?: Sellergroup;
     refreshAuthToken?: AuthTokenResponse;
     updateRegistration?: Registration;
 };
