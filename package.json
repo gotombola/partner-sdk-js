@@ -1,6 +1,6 @@
 {
     "name": "@gotombola/partner-sdk",
-    "version": "0.1.8",
+    "version": "0.1.9",
     "description": "GoTombola Partner SDK",
     "license": "ISC",
     "main": "lib/index.js",
